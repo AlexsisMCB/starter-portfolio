@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    padding: 15px 20px;
+    background: linear-gradient(#e77170, #e29676 95%);
+    border: 5px solid #c2cad0;
+    border-bottom: none;
+    width: 100%;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    padding: 5px 50px;
+    display: flex;
+    font-size: 40px;
+    color: white;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-style: italic;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    padding: 10px 50px;
+    color:white;
+    font-weight: 300;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url("..images//");
+    padding: 150px 50px;
+    background: linear-gradient(#e29676, #e77170 65%);
+    border: 5px solid #c2cad0;
+    border-top: none;
+    width: 100%;
+}
+
+.intro {
+   color: white;
+}
+
+.intro h3 {
+    padding: 10px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.intro h4 {
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+article {
+    padding: 200px 200px;
+    text-align: center;
+    background: radial-gradient(rgba(255, 255, 255, 0.884), #c2cad0);
+    background-color: #cccccd;
+}
+
+article h2 {
+    
+}
+
+p {
+    text-align: center;
+}
+
+.samples {
+    padding: 300px;
+    background: radial-gradient(#e29676 25%, #e77170)
+}
+
+.samples h2 {
+
+}
+
+.contact-me {
+    padding: 50px;
+    background: radial-gradient(rgba(255, 255, 255, 0.884), #c2cad0);
+}
+
+.contact-me h2 {
+
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    border: 5px solid #c2cad0;
+    border-top: none;
+    background: linear-gradient(#e77170, #e29676 50%);
+}
