@@ -1,13 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'spectral bold';
+    src: url('assets/fonts/spectral-bold.woff2') format('woff2'),
+         url('assets/fonts/spectral-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karla italic';
+    src: url('assets/fonts/karla-italic.woff2') format('woff2'),
+         url('assets/fonts/karla-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karla regular';
+    src: url('assets/fonts/karla-regular.woff2') format('woff2'),
+         url('assets/fonts/karla-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'spectral bold', 'karla italic', 'karla regular', Helvetica, Arial, sans-serif;
+ }
 
 header {
-    padding: 15px 20px;
+    padding: 25px 20px;
     background: linear-gradient(#e77170, #e29676 95%);
     border: 5px solid #c2cad0;
     border-bottom: none;
@@ -20,13 +49,14 @@ header {
 }
 
 header h1 {
-    padding: 5px 50px;
+    padding: 5px 175px;
     display: flex;
-    font-size: 40px;
-    color: white;
+    font-size: 50px;
 }
 
 header h1 a {
+    font-family: 'spectral bold';
+    font-weight: bolder;
     text-decoration: none;
     color: white;
     text-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
@@ -36,67 +66,144 @@ header nav ul {
     display: flex;
     list-style: none;
     font-style: italic;
-    font-size: 20px;
+    font-size: 25px;
     justify-content: flex-end;
 }
 
 header nav ul li a {
+    font-family: 'karla italic';
     padding: 10px 50px;
     color:white;
-    font-weight: 300;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
 .banner {
-    background-image: url("..images//");
-    padding: 150px 50px;
     background: linear-gradient(#e29676, #e77170 65%);
     border: 5px solid #c2cad0;
     border-top: none;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .intro {
+    padding: 200px;
    color: white;
+   font-weight: bolder;
+   font-style: italic;
+   font-family: 'karla italic';
 }
 
 .intro h3 {
-    padding: 10px;
+    font-family: 'karla italic';
     font-size: 40px;
-    display: flex;
-    align-items: center;
 }
 
 .intro h4 {
-    padding: 10px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+    font-size: 25px;
 }
 
 article {
-    padding: 200px 200px;
-    text-align: center;
+    padding: 50px;
     background: radial-gradient(rgba(255, 255, 255, 0.884), #c2cad0);
     background-color: #cccccd;
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
 }
 
 article h2 {
-    
+    color: #af3f55;
+    font-size: 50px;
+    font-family: 'karla italic';
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-align: left;
 }
 
 p {
-    text-align: center;
+    font-family: 'karla italic';
+    font-style: italic;
+    font-size: large;
 }
 
 .samples {
-    padding: 300px;
-    background: radial-gradient(#e29676 25%, #e77170)
+    padding: 150px;
+    background: radial-gradient(#e29676 25%, #e77170);
 }
 
 .samples h2 {
+    color: #af3f55;
+    font-size: 30px;
+    text-align: right;
+}
 
+.web-pages {
+    margin: 20px;
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+  }
+  
+.grid-item {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: #c2cad0;
+}
+
+.image-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.image-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.image-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.image-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.image-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.web-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
 }
 
 .contact-me {
@@ -105,7 +212,7 @@ p {
 }
 
 .contact-me h2 {
-
+    color: #af3f55;
 }
 
 footer {
@@ -114,5 +221,5 @@ footer {
     padding: 15px;
     border: 5px solid #c2cad0;
     border-top: none;
-    background: linear-gradient(#e77170, #e29676 50%);
+    background:linear-gradient(#e77170, #af3f55 95%);
 }
