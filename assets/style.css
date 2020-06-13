@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -32,13 +33,13 @@
 }
 
 body {
-    font-family: 'spectral bold', 'karla italic', 'karla regular', Helvetica, Arial, sans-serif;
+    font-family: 'karla italic', 'spectral bold';
  }
 
 header {
     padding: 25px 20px;
     background: linear-gradient(#e77170, #e29676 95%);
-    border: 5px solid #c2cad0;
+    border: 5px solid #979ca0;
     border-bottom: none;
     width: 100%;
     justify-content: space-between;
@@ -78,10 +79,14 @@ header nav ul li a {
     text-decoration: none;
 }
 
+.border-style {
+    border: 5px solid #979ca0;
+    border-top: none;
+    border-bottom: none;
+}
+
 .banner {
     background: linear-gradient(#e29676, #e77170 65%);
-    border: 5px solid #c2cad0;
-    border-top: none;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -89,11 +94,11 @@ header nav ul li a {
 }
 
 .intro {
-    padding: 200px;
    color: white;
    font-weight: bolder;
    font-style: italic;
    font-family: 'karla italic';
+   padding: 200px;
 }
 
 .intro h3 {
@@ -107,61 +112,55 @@ header nav ul li a {
 
 article {
     padding: 50px;
-    background: radial-gradient(rgba(255, 255, 255, 0.884), #c2cad0);
-    background-color: #cccccd;
+    background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
     display: flex;
     text-align: justify;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-style: italic;
 }
 
 article h2 {
     color: #af3f55;
     font-size: 50px;
     font-family: 'karla italic';
-    font-weight: bolder;
-    text-decoration: underline;
-    text-decoration-style: double;
     text-align: left;
 }
 
 p {
     font-family: 'karla italic';
-    font-style: italic;
     font-size: large;
 }
 
 .samples {
-    padding: 150px;
+    padding: 75px;
     background: radial-gradient(#e29676 25%, #e77170);
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .samples h2 {
     color: #af3f55;
-    font-size: 30px;
-    text-align: right;
+    font-size: 50px;
+    font-family: 'karla italic';
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.web-pages {
-    margin: 20px;
-    flex: 1;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
-    grid-auto-flow: dense;
-  }
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
   
 .grid-item {
-    display: flex;
-    justify-content: center;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    align-items: center;
+    border: 5px solid #af3f55;
     border-radius: 5px;
-    font-size: 35px;
-    background-color: #c2cad0;
 }
 
 .image-1 {
@@ -208,10 +207,40 @@ p {
 
 .contact-me {
     padding: 50px;
-    background: radial-gradient(rgba(255, 255, 255, 0.884), #c2cad0);
+    background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
+    color: #af3f55;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .contact-me h2 {
+    font-size: 40px;
+    color: #af3f55;
+    text-align: center;
+    font-family: 'karla italic';
+}
+
+.links {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    padding: 15px;
+}
+
+.icons img {
+    padding: 0 5px;
+
+}
+
+.icons a {
+    font-size: 20px;
+    font-family: 'karla italic';
+    text-decoration: none;
     color: #af3f55;
 }
 
@@ -219,7 +248,16 @@ footer {
     text-align: center;
     font-size: 15px;
     padding: 15px;
-    border: 5px solid #c2cad0;
+    border: 5px solid #979ca0;
     border-top: none;
     background:linear-gradient(#e77170, #af3f55 95%);
+}
+
+footer h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer div {
+    color: white;
 }
