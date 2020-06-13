@@ -32,16 +32,13 @@
 
 }
 
-body {
-    font-family: 'karla italic', 'spectral bold';
- }
-
 header {
     padding: 25px 20px;
     background: linear-gradient(#e77170, #e29676 95%);
     border: 5px solid #979ca0;
     border-bottom: none;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
@@ -50,7 +47,7 @@ header {
 }
 
 header h1 {
-    padding: 5px 175px;
+    padding: 5px;
     display: flex;
     font-size: 50px;
 }
@@ -61,6 +58,10 @@ header h1 a {
     text-decoration: none;
     color: white;
     text-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    padding: 15px;
 }
 
 header nav ul {
@@ -90,7 +91,7 @@ header nav ul li a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .intro {
@@ -98,7 +99,7 @@ header nav ul li a {
    font-weight: bolder;
    font-style: italic;
    font-family: 'karla italic';
-   padding: 200px;
+   padding: 150px 50px;
 }
 
 .intro h3 {
@@ -111,11 +112,8 @@ header nav ul li a {
 }
 
 article {
-    padding: 50px;
+    padding: 120px;
     background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
-    display: flex;
-    text-align: justify;
-    justify-content: space-around;
     font-style: italic;
 }
 
@@ -123,16 +121,18 @@ article h2 {
     color: #af3f55;
     font-size: 50px;
     font-family: 'karla italic';
-    text-align: left;
+    float: left;
 }
 
 p {
     font-family: 'karla italic';
     font-size: large;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .samples {
-    padding: 75px;
+    padding: 100px;
     background: radial-gradient(#e29676 25%, #e77170);
     font-weight: bolder;
     font-style: italic;
@@ -261,3 +261,115 @@ footer h4 {
 footer div {
     color: white;
 }
+
+@media screen and (max-width: 980px) {
+
+    header {
+        padding: 0;
+    }
+    header h1 {
+        padding: 10px 0 10px 20px;
+    }
+
+    header nav {
+        padding-top: 30px;
+    }
+
+    article {
+        display: inline-flex;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 25vw);
+    }
+
+    .contact-me {
+        display: inline-flex;
+    }
+
+    .links {
+        padding: 0;
+    }
+
+    .icons a {
+        font-size: 15px;
+    }
+
+ }
+ 
+ @media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header h1 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+
+    article {
+        padding: 35px;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+
+    article p {
+        text-align: center;
+        padding: 0 70px;
+    }
+
+    .samples h2 {
+        padding-bottom: 45px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 27vw);
+    }
+
+    .contact-me {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+    }
+
+ }
+ 
+ @media screen and (max-width: 575px) {
+
+    header nav ul li a {
+        padding: 10px;
+    }
+    .intro {
+        padding-top: 75px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    article h2 {
+        font-size: xx-large;
+        text-align: center;
+        padding-right: 25px;
+    }
+
+    article p {
+        font-size: smaller;
+        display: contents;
+    }
+
+    .links {
+        display: block;
+    }
+ }
