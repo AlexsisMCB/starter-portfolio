@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my first portfolio to showcase my work and giving a brief introduction of myself as well as my contact information.
+This is my first portfolio to showcase my work and give a brief introduction of myself as well as my contact information.
 
 ## Screen View
 
