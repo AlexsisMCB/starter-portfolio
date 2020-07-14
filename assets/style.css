@@ -2,34 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-@font-face {
-    font-family: 'spectral bold';
-    src: url('assets/fonts/spectral-bold.woff2') format('woff2'),
-         url('assets/fonts/spectral-bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'karla italic';
-    src: url('assets/fonts/karla-italic.woff2') format('woff2'),
-         url('assets/fonts/karla-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'karla regular';
-    src: url('assets/fonts/karla-regular.woff2') format('woff2'),
-         url('assets/fonts/karla-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'EB Garamond', serif;
 }
 
 :root {
@@ -57,7 +30,6 @@ header h1 {
 }
 
 header h1 a {
-    font-family: 'spectral bold';
     font-weight: bolder;
     text-decoration: none;
     color: white;
@@ -71,13 +43,11 @@ header nav {
 header nav ul {
     display: flex;
     list-style: none;
-    font-style: italic;
     font-size: 25px;
     justify-content: flex-end;
 }
 
-header nav ul li a {
-    font-family: 'karla italic';
+header nav ul ol a {
     padding: 10px 50px;
     color:white;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -102,12 +72,10 @@ header nav ul li a {
    color: white;
    font-weight: bolder;
    font-style: italic;
-   font-family: 'karla italic';
    padding: 150px 50px;
 }
 
 .intro h3 {
-    font-family: 'karla italic';
     font-size: 40px;
 }
 
@@ -118,18 +86,15 @@ header nav ul li a {
 article {
     padding: 120px;
     background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
-    font-style: italic;
 }
 
 article h2 {
     color: var(--secondary-color);
     font-size: 50px;
-    font-family: 'karla italic';
     float: left;
 }
 
 p {
-    font-family: 'karla italic';
     font-size: large;
     display: flex;
     justify-content: flex-end;
@@ -139,13 +104,11 @@ p {
     padding: 100px;
     background: radial-gradient(#e29676 25%, #e77170);
     font-weight: bolder;
-    font-style: italic;
 }
 
 .samples h2 {
     color: var(--secondary-color);
     font-size: 50px;
-    font-family: 'karla italic';
     text-align: center;
     padding-bottom: 20px;
 }
@@ -217,14 +180,12 @@ p {
     display: flex;
     justify-content: space-around;
     font-weight: bolder;
-    font-style: italic;
 }
 
 .contact-me h2 {
     font-size: 40px;
     color: var(--secondary-color);
     text-align: center;
-    font-family: 'karla italic';
 }
 
 .links {
@@ -244,7 +205,6 @@ p {
 
 .icons a {
     font-size: 20px;
-    font-family: 'karla italic';
     text-decoration: none;
     color: var(--secondary-color);
 }
