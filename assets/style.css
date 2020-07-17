@@ -10,69 +10,48 @@
 }
 
 header {
-    padding: 25px 20px;
-    background: linear-gradient(#e77170, #e29676 95%);
-    border: 5px solid #979ca0;
-    border-bottom: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    background: var(--secondary-color);
+    border-bottom: 2px solid #979ca0;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header h1 {
+header nav {
     padding: 5px;
-    display: flex;
-    font-size: 50px;
 }
 
-header h1 a {
-    font-weight: bolder;
-    text-decoration: none;
+header nav ul {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+header nav ul ol a {
+    color:white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.background {
+    background: radial-gradient(#e29676, #e77170 65%);
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+h1 {
+    padding-top: 25px;
     color: white;
     text-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
 }
 
-header nav {
-    padding: 15px;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    font-size: 25px;
-    justify-content: flex-end;
-}
-
-header nav ul ol a {
-    padding: 10px 50px;
-    color:white;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-}
-
-.border-style {
-    border: 5px solid #979ca0;
-    border-top: none;
-    border-bottom: none;
-}
-
-.banner {
-    background: linear-gradient(#e29676, #e77170 65%);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 .intro {
    color: white;
-   font-weight: bolder;
-   font-style: italic;
-   padding: 150px 50px;
+   padding: 50px 50px;
 }
 
 .intro h3 {
@@ -84,27 +63,19 @@ header nav ul ol a {
 }
 
 article {
-    padding: 120px;
-    background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
-}
-
-article h2 {
-    color: var(--secondary-color);
-    font-size: 50px;
-    float: left;
+    padding: 100px 0;
 }
 
 p {
-    font-size: large;
-    display: flex;
-    justify-content: flex-end;
+
 }
 
-.samples {
-    padding: 100px;
-    background: radial-gradient(#e29676 25%, #e77170);
+/*.samples {
+    padding: 10px;
+    background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
     font-weight: bolder;
-}
+    display: flex;
+}*/
 
 .samples h2 {
     color: var(--secondary-color);
@@ -113,7 +84,7 @@ p {
     padding-bottom: 20px;
 }
 
-.container {
+/*.container {
     display: flex;
     justify-content: center;
 }
@@ -127,7 +98,6 @@ p {
 
 .caption {
     top: 200px;
-    color: white;
     text-align: center;
 }
 
@@ -139,11 +109,6 @@ p {
     border: 5px solid #af3f55;
     border-radius: 5px;
     overflow: hidden;
-}
-
-.image-1 {
-    grid-column: 1;
-    grid-row: 1 / span 2;
 }
 
 .image-2 {
@@ -171,27 +136,16 @@ p {
     height: 100%;
     object-fit: cover;
     display: block; 
-}
+}*/
 
 .contact-me {
-    padding: 50px;
-    background: radial-gradient(rgba(255, 255, 255, 0.6), #c2cad0);
-    color: var(--secondary-color);
-    display: flex;
-    justify-content: space-around;
-    font-weight: bolder;
+    background: radial-gradient(#e29676, #e77170 65%);
+    color: white;
 }
 
 .contact-me h2 {
     font-size: 40px;
-    color: var(--secondary-color);
     text-align: center;
-}
-
-.links {
-    padding: 5px;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .icons {
@@ -206,20 +160,17 @@ p {
 .icons a {
     font-size: 20px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: white;
 }
 
 footer {
     text-align: center;
-    font-size: 15px;
-    padding: 15px;
-    border: 5px solid #979ca0;
-    border-top: none;
-    background:linear-gradient(#e77170, #af3f55 95%);
+    padding: 5px;
+    border-top: 2px solid #979ca0;
+    background:var(--secondary-color);
 }
 
 footer h4 {
-    font-weight: bold;
     font-size: 20px;
 }
 
@@ -228,7 +179,7 @@ footer div {
 }
 
 
-@media screen and (max-width: 980px) {
+/*@media screen and (max-width: 980px) {
 
     header {
         padding: 0;
@@ -342,4 +293,4 @@ footer div {
     .caption h3 {
         font-size: smaller;
     }
- }
+ }*/
