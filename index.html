@@ -4,132 +4,132 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dive In - Web Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
 
-    <header>
-        <h1>
-            <a href="/">Alexsis M.</a>
-        </h1>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#who-i-am">Who I Am</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-info">Contact Info</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
     <body>
-        <section class="banner border-style">
-            <div class="intro">
-                <h3>Hello, Welcome!</h3>
-                </br>
-                <h4>Let me introduce myself.</h4>
+        <header class="d-flex justify-content-between">
+            <div class="symbol-h1">
+                <h1 class="display-4 font-italic"><span>♠︎ </span>Alexsis</h1>
             </div>
-    
-            <div>
-                <img src="./assets/images/portfolio.gif" width="300px" />
-            </div>
-        </section>
+            <nav>
+                <ul class="nav">
+                    <ol class="nav-item"><a class="nav-link" href="#who-i-am">Who I Am</a></ol>
+                    <ol class="nav-item"><a class="nav-link" href="#work">Work</a></ol>
+                    <ol class="nav-item"><a class="nav-link" href="#contact-info">Contact Info</a></ol>
+                </ul>
+            </nav>
+        </header>
+        <div class="background-2">
+            <section class="banner d-flex justify-content-end">
+                <div class="intro">
+                    <h3 class="font-italic">Hello, Welcome!</h3>
+                    </br>
+                    <h4 class="font-italic">Let me introduce myself.</h4>
+                </div>
+            </section>
+        </div>
+        <div class="d-flex justify-content-center background self-info">
+            <img src="./assets/images/portfolio.gif" width="300px" class="selfie" />
+            <article id="who-i-am">
+                <p>
+                    My full name is Alexsis Conley-Brown. </br>
+                    I am currently enrolled in the UW Extended Campus Coding Boot Camp!</br>
+                    I take a keen interest in web development and graphic design.</br>
+                    Moving forward I plan to continually learn and progress in this line of work.
+                </p>
+            </article>
+        </div>
 
-        <article id="who-i-am" class="border-style">
-            <h2>Who I Am</h2>
-            <p>
-                 My full name is Alexsis Conley-Brown. </br>
-                 I am currently enrolled in the UW Extended Campus Coding Boot Camp! </br>
-                 I take a keen interest in web development and graphic design. </br>
-                 Moving forward I plan to continually learn and progress in this line of work.
-            </p>
-        </article>
-
-        <section id="work" class="samples border-style">
-            <h2>Work</h2>
-
+       <section id="work" class="samples">
             <div class="container">
-                <div class="grid-container">
-                    <div class="grid-item image-1">
-                        <div class="caption">
-                            <h3>Run Buddy</h3>
-                            <h4>HTML/CSS</h4>
+                <div class="row row-style justify-content-md-center">
+                    <a href="https://alexsismcb.github.io/run-buddy/" target="_blank">
+                        <div class="p-1">
+                            <div class="card images">
+                                    <img src="assets/images/run-buddy.jpg" alt="run buddy website" class="card-img" />
+                                <div class="caption card-img-overlay">
+                                    <h5 class="card-title text-white">Run Buddy</h5>
+                                    <p class="text-white">HTML/CSS</p>
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://alexsismcb.github.io/run-buddy/">
-                            <img src="assets/images/run-buddy.jpg" alt="computer coding" class="web-img" />
-                        </a>
-                    </div>
-
-                    <div class="grid-item image-2">
-                        <div class="caption">
-                            <h3>Coming Soon</h3>
+                    </a>
+                    <a href="https://alirueter.github.io/find-my-munchies/" target="_blank">
+                        <div class="p-1">
+                            <div class="card images image-2">
+                                    <img src="assets/images/FindMunchies.png" alt="find my munchies website" class="card-img" />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-white">Find My Munchies</h5>
+                                    <p class="text-white">HTML/CSS/JScript</p>
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://cdn-images-1.medium.com/max/1024/0*Bq9czVoOSydbQUQ0">
-                            <img src="assets/images/coding-image.jpeg" alt="computer coding" class="web-img" />
-                        </a>
-                    </div>
-
-                    <div class="grid-item image-3">
-                        <div class="caption">
-                            <h3>Coming Soon</h3>
+                    </a>
+                </div>
+                <div class="row row-style justify-content-md-center">
+                    <a href="https://www.business.com/images/content/5a6/90b4e51ee4720458b456b/1500-0-" target="_blank">
+                        <div class="p-1">
+                            <div class="card images">
+                                <img src="assets/images/coding-image2.jpeg" alt="computer coding" class="card-img" />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-white">Coming Soon</h5>                            
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://www.business.com/images/content/5a6/90b4e51ee4720458b456b/1500-0-">
-                            <img src="assets/images/coding-image2.jpeg" alt="computer coding" class="web-img"/>
-                        </a>
-                    </div>
-
-                    <div class="grid-item image-4">
-                        <div class="caption">
-                            <h3>Coming Soon</h3>
+                    </a>
+                    <a href="https://cdn-images-1.medium.com/max/1024/0*Bq9czVoOSydbQUQ0" target="_blank">
+                        <div class="p-1">
+                            <div class="card images">
+                                <img src="assets/images/coding-image.jpeg" alt="computer coding" class="card-img" />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-white">Coming Soon</h5>                            
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://www.business.com/images/content/5a6/90b4e51ee4720458b456b/1500-0-">
-                            <img src="assets/images/coding-image2.jpeg" alt="computer coding" class="web-img"/>
-                        </a>
-                    </div>
-
-                    <div class="grid-item image-5">
-                        <div class="caption">
-                            <h3>Coming Soon</h3>
+                    </a>
+                    <a href="https://www.business.com/images/content/5a6/90b4e51ee4720458b456b/1500-0-" target="_blank">
+                        <div class="p-1">
+                            <div class="card images">
+                                <img src="assets/images/coding-image2.jpeg" alt="computer coding" class="card-img" />
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-white">Coming Soon</h5>                            
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://cdn-images-1.medium.com/max/1024/0*Bq9czVoOSydbQUQ0">
-                            <img src="assets/images/coding-image.jpeg" alt="computer coding" class="web-img" />
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="contact-info" class ="contact-me border-style">
+        <section id="contact-info" class ="contact-me">
             <h2>Contact Info</h2>
-            <div class="links">
+            <div class="d-flex justify-content-center contact-info">
                 <div class="icons">
-                    <img src="assets/images/gmail-logo.png" width=30px />
+                    <img src="assets/images/gmail-logo.png" width=50px />
                     <a href="mailto:alexsismcb@gmail.com">
                         alexsismcb@gmail.com
                     </a>
                 </div>
 
                 <div class="icons">
-                    <img src="assets/images/twitter-bird.png" width=30px />
+                    <img src="assets/images/twitter-bird.png" width=50px />
                     <a href="https://twitter.com/Alexsis_MCB">
                         @Alexsis_MCB
                     </a>
                 </div>
 
                 <div class="icons">
-                    <img src="assets/images/insta-logo.png" width=30px />
+                    <img src="assets/images/insta-logo.png" width=45px />
                     <a href="https://instagram.com/amcb_gallery">
                         Amcb_gallery
                     </a>
                 </div>
 
                 <div class="icons">
-                    <img src="assets/images/linkedin.png" width=30px />
+                    <img src="assets/images/linkedin.png" width=45px />
                     <a href="https://www.linkedin.com/in/alexsis-conley-brown-395b831a7">
                         Alexsis
                     </a>
@@ -139,7 +139,6 @@
 
         <footer>
             <h4>Black Lives Matter ✊🏻✊🏼✊🏽✊🏾✊🏿</h4>
-            ❤️
             <div> &copy; 2020 Alexsis Conley Brown</div>
         </footer>
     </body>
