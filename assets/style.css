@@ -74,11 +74,12 @@ h1 {
 }
 
 article {
-    padding: 100px 0;
+    padding: 170px 0;
 }
 
 p {
     font-weight: 300;
+    font-size: 20px;
 }
 
 .samples {
@@ -136,7 +137,6 @@ footer div {
     color: white;
 }
 
- 
 @media screen and (max-width: 768px) {
 
     header {
@@ -155,8 +155,12 @@ footer div {
         font-size: 25px;
     }
 
+    .selfie{
+        width: 40%;
+    }
+
     article {
-        padding: 35px;
+        padding: 75px 10px;
     }
 
     article p {
@@ -194,7 +198,7 @@ footer div {
     }
 
     .selfie {
-        width: 50vw;
+        width: 50%;
     }
 
     .icons {
