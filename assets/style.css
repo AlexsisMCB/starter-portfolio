@@ -101,7 +101,6 @@ p {
     color: #e29676;
     border: 20px;
     opacity: .9;
-    font-weight: bold;
 }
 
 header nav ul ol a:hover {
@@ -169,6 +168,7 @@ footer div {
 
     .selfie{
         width: 40%;
+        height: 40%;
     }
 
     article {
@@ -211,6 +211,7 @@ footer div {
 
     .selfie {
         width: 50%;
+        height: 50%;
     }
 
     .icons {
