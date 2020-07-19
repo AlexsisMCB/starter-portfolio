@@ -97,6 +97,18 @@ p {
     width: 31vw;
 }
 
+.images:hover {
+    color: #e29676;
+    border: 20px;
+    opacity: .9;
+    font-weight: bold;
+}
+
+header nav ul ol a:hover {
+    color: #e29676;
+    font-size: 25px;
+}
+
 .contact-me {
     background: radial-gradient(#e29676, #e77170 65%);
     color: white;
