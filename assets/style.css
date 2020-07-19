@@ -173,7 +173,7 @@ footer div {
  @media screen and (max-width: 575px) {
 
     .symbol-h1 {
-        padding: 0;
+        padding-left: 30px;
     }
 
     header nav ul {
@@ -191,6 +191,16 @@ footer div {
     .self-info {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .selfie {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .icons {
+        display: inline-block;
     }
 
     p {
