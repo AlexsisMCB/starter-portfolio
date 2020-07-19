@@ -193,6 +193,16 @@ footer div {
         flex-wrap: wrap;
     }
 
+    .selfie {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .icons {
+        display: inline-block;
+    }
+    
     p {
         font-size: 5vw;
     }
