@@ -10,7 +10,7 @@
 }
 
 header {
-    background: var(--secondary-color);
+    background: radial-gradient(#e29676, #e77170 65%);
     border-bottom: 2px solid #979ca0;
     position: -webkit-sticky;
     position: sticky;
@@ -34,18 +34,13 @@ header nav ul ol a {
 }
 
 .background {
-    background: radial-gradient(#e29676, #e77170 65%);
+    background: white;
 }
 
 .background-2 {
-    background-image: url("../assets/images/IMG_1708.jpeg");
-    background-size: cover;
+    background: lightgrey;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
 }
 
 .banner {
@@ -74,7 +69,11 @@ h1 {
 }
 
 article {
+<<<<<<< HEAD
     padding: 170px 0;
+=======
+    padding: 50px 0;
+>>>>>>> develop
 }
 
 p {
@@ -84,7 +83,7 @@ p {
 
 .samples {
     padding: 10px;
-    background: var(--secondary-color);
+    background: lightgrey;
     border-top: 2px solid #979ca0;
     border-bottom: 2px solid #979ca0;
 }
@@ -93,8 +92,19 @@ p {
     width: 25vw;
 }
 
-.image-2 {
-    width: 31vw;
+.images:hover {
+    border: 20px;
+    opacity: .5;
+}
+
+.card-font {
+    background-color: white;
+    padding-left: 10px;
+}
+
+header nav ul ol a:hover {
+    color: var(--secondary-color);
+    font-size: 25px;
 }
 
 .images:hover {
@@ -109,8 +119,8 @@ header nav ul ol a:hover {
 }
 
 .contact-me {
-    background: radial-gradient(#e29676, #e77170 65%);
-    color: white;
+    background: white;
+    color: black;
 }
 
 .contact-me h2 {
@@ -130,14 +140,14 @@ header nav ul ol a:hover {
 .icons a {
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 footer {
     text-align: center;
     padding: 5px;
     border-top: 2px solid #979ca0;
-    background:var(--secondary-color);
+    background: radial-gradient(#e29676, #e77170 65%);
 }
 
 footer h4 {
@@ -202,6 +212,7 @@ footer div {
 
     .intro {
         text-align: center;
+        padding:0;
     }
 
     .self-info {
