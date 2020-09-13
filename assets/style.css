@@ -69,11 +69,7 @@ h1 {
 }
 
 article {
-<<<<<<< Updated upstream
-    padding: 100px 0;
-=======
     padding: 50px 0;
->>>>>>> Stashed changes
 }
 
 p {
@@ -91,10 +87,6 @@ p {
     width: 25vw;
 }
 
-<<<<<<< Updated upstream
-.image-2 {
-    width: 31vw;
-=======
 .images:hover {
     border: 20px;
     opacity: .5;
@@ -108,7 +100,6 @@ p {
 header nav ul ol a:hover {
     color: var(--secondary-color);
     font-size: 25px;
->>>>>>> Stashed changes
 }
 
 .contact-me {
